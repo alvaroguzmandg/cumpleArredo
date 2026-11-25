@@ -182,6 +182,41 @@
       "email": "smenutti@arredo.com.ar",
       "day": 7,
       "month": 3
+    },
+    {
+      "id": "person-027",
+      "name": "Luca Aisa",
+      "email": "laisa@arredo.com.ar",
+      "day": 29,
+      "month": 1
+    },
+    {
+      "id": "person-028",
+      "name": "Margregory Sánchez",
+      "email": "msanchez@arredo.com.ar",
+      "day": 8,
+      "month": 2
+    },
+    {
+      "id": "person-029",
+      "name": "Javier Alonso",
+      "email": "jalonso@arredo.com.ar",
+      "day": 13,
+      "month": 4
+    },
+    {
+      "id": "person-030",
+      "name": "Pablo Alejandro Villalta Lasso",
+      "email": "alasso@arredo.com.ar",
+      "day": 23,
+      "month": 5
+    },
+    {
+      "id": "person-031",
+      "name": "Mariano José Lavallol",
+      "email": "mlavallol@arredo.com.ar",
+      "day": 5,
+      "month": 11
     }
   ]
 }
