@@ -1,0 +1,59 @@
+{
+  "updatedAt": "2026-11-25",
+  "people": [
+    {
+      "id": "person-001",
+      "name": "Alvaro Guzmán",
+      "day": 13,
+      "month": 12
+    },
+    {
+      "id": "person-002",
+      "name": "Guada Velez",
+      "day": 1,
+      "month": 6
+    },
+    {
+      "id": "person-003",
+      "name": "Mariela Fernanda Trejo",
+      "day": 9,
+      "month": 9
+    },
+    {
+      "id": "person-004",
+      "name": "Martina Salvia",
+      "day": 15,
+      "month": 2
+    },
+    {
+      "id": "person-005",
+      "name": "Ivana Zurita",
+      "day": 25,
+      "month": 6
+    },
+    {
+      "id": "person-006",
+      "name": "Marcia Panizza",
+      "day": 17,
+      "month": 6
+    },
+    {
+      "id": "person-007",
+      "name": "Melanie Gaudino",
+      "day": 15,
+      "month": 8
+    },
+    {
+      "id": "person-008",
+      "name": "Flor Giovio",
+      "day": 11,
+      "month": 1
+    },
+    {
+      "id": "person-009",
+      "name": "Deninson Leon",
+      "day": 15,
+      "month": 9
+    }
+  ]
+}

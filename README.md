@@ -1,36 +1,31 @@
 # Confetti · Cumpleaños del equipo
 
-Sitio estático responsive, sin dependencias de compilación. Vista de hoy, próximos cumpleaños, búsqueda, filtro por mes, calendario, borradores de correo y Microsoft Teams, importación local de CSV y eventos anuales ICS con recordatorios.
+Calendario responsive con cumpleaños de hoy, próximos, búsqueda y filtro por mes. Sin Google Cloud, OAuth ni servicios pagos nuevos. Usa archivos estáticos, carga manual, importación CSV/JSON y recordatorios ICS.
 
-## Desarrollo
+## Datos compartidos y datos locales
 
-`npm run dev` inicia http://localhost:4173. `npm test` comprueba fechas, CSV y eventos. Requiere Node 18+ y Python 3 para el servidor local.
+`dist/birthdays.json` contiene la lista publicada del equipo: identificador neutro, nombre completo, día y mes. No incluye correos ni año de nacimiento. La carga inicial de 9 cumpleaños corresponde a la hoja facilitada, al 25/11/2026. Es una actualización manual, no una sincronización con Google.
 
-## Datos y acceso
+El formulario “Agregar cumpleaños” pide nombre, apellido, correo opcional, día y mes. Los cambios y correos se guardan únicamente en localStorage del navegador, nunca se envían a GitHub ni al alojamiento. Las ediciones locales se combinan con la lista publicada y nuevas altas del equipo. El icono de lápiz permite editar una persona o agregar su correo local para saludarla.
 
-La demo contiene identidades ficticias con correos example.com. Los CSV se guardan exclusivamente en localStorage del navegador donde se importan y no se suben al repositorio ni al hosting. No sincronizan entre dispositivos. Cada importación reemplaza la lista local y los recordatorios. No incluir respuestas reales ni credenciales en Git.
+Desde el botón de datos se pueden importar CSV/JSON y **Exportar para publicar**. La exportación incluye todos los nombres y cumpleaños visibles y excluye correos, años de nacimiento y cualquier campo adicional. Compartir ese JSON en el chat permite revisar y publicar una nueva lista para todo el equipo. Sin ese paso, las altas realizadas en el navegador no las ven otras personas ni otros dispositivos. No hay una base de datos compartida que escriba directamente desde la web.
 
-La hoja facilitada en el chat requiere autenticación y aún no está conectada. Para sincronización multiusuario se necesita un backend autenticado que consulte Google Sheets con permisos de lectura limitados a esa hoja. Conectar Google Drive en el chat permite inspeccionar la hoja; no otorga por sí solo acceso al sitio publicado. No publicar una hoja con correos personales ni almacenar credenciales en JavaScript del cliente.
+No se publican los correos aunque el repositorio sea privado. Si una persona no tiene correo local, el saludo permite copiar texto, abrir Teams para buscarla o abrir un correo sin destinatario.
 
-Las notificaciones del navegador requieren permiso y la página abierta; el recordatorio debe estar seleccionado para esa persona. Los archivos ICS deben importarse y guardarse en un calendario; verificar allí los avisos (la hora y soporte dependen del calendario). Eliminar un recordatorio de la web no elimina el evento importado. El 29 de febrero se celebra el 28 en años no bisiestos. Los saludos abren borradores: no envían mensajes automáticamente.
+## Actualizar desde el chat
 
-## Publicación con GitHub Pages
+Se puede pedir leer nuevamente la hoja conectada de Google o entregar el JSON exportado desde la web. Antes de publicar, transformar cada registro a `id`, `name`, `day`, `month`; excluir emails, marca temporal y año de nacimiento. Verificar fechas y duplicados, ejecutar `npm test`, publicar el alojamiento y guardar el código en el repositorio privado. Las credenciales y respuestas originales nunca deben guardarse en Git.
 
-GitHub Pages publica la rama `gh-pages` desde la raíz. El código está en `main` y el contenido web publicado corresponde al árbol `dist/`. URL: `https://alvaroguzmandg.github.io/cumpleArredo/`. La página estática es pública; los datos de la hoja requieren ingreso con Google y permiso sobre la hoja.
+## Publicación
 
-## Conexión privada de Google desde la página
+Repositorio privado: https://github.com/alvaroguzmandg/cumpleArredo
 
-La conexión está implementada con Google Identity Services y Sheets API. La autorización del chat no se reutiliza en la página. Para activarla:
+Web: https://cumples-equipo-ag-2026.alvaroguzmandg.chatgpt.site
 
-1. Crear o seleccionar un proyecto de Google Cloud y habilitar Google Sheets API.
-2. Configurar Google Auth Platform (audiencia interna si corresponde al Workspace del equipo; en testing agregar usuarios de prueba).
-3. Crear un cliente OAuth tipo **Aplicación web** con estos orígenes JavaScript autorizados:
-   - `https://alvaroguzmandg.github.io`
-   - `https://cumples-equipo-ag-2026.alvaroguzmandg.chatgpt.site`
-   - `http://localhost:4173` para desarrollo.
-4. Copiar el **Client ID** (termina en `.apps.googleusercontent.com`) en `GOOGLE_CLIENT_ID` de `dist/google.js`, o ingresarlo desde el botón de datos → Conectar Google Sheets. No ingresar un client secret; no se usa.
-5. Cada visitante ingresa con una cuenta que tenga acceso de lectura a la hoja privada. El alcance de Google `spreadsheets.readonly` solicita lectura de las hojas accesibles al usuario; el código consulta únicamente la hoja configurada. El administrador puede requerir aprobación del cliente OAuth.
+El plan actual de GitHub no permite Pages desde repositorios privados. Por eso el código se conserva en GitHub privado y el sitio se publica por Sites. La antigua URL de GitHub Pages deja de estar disponible. Los nombres y cumpleaños de la web son visibles a quienes puedan abrir la página; la privacidad del repositorio no oculta el contenido publicado.
 
-La página lee hasta 4999 respuestas desde A:D de “Respuestas de formulario 1”, usa las columnas existentes y descarta el año de nacimiento. “Actualizar datos” consulta nuevas respuestas. Los tokens y respuestas de Google permanecen en memoria y no se guardan en localStorage. Al vencer la sesión hay que volver a ingresar. Solo el client ID público se recuerda localmente. Los registros CSV importados sí se guardan localmente. La integración aún requiere el client ID y no pudo verificarse con login en producción.
+## Desarrollo y verificación
 
-Documentación: https://developers.google.com/identity/oauth2/web/guides/use-token-model y https://developers.google.com/workspace/sheets/api/scopes
+`npm run dev`: servidor en http://localhost:4173. `npm test`: fechas, cambio de año, CSV, ICS, combinación de datos locales y exclusión de campos privados. Node 18+ y Python 3 para el servidor local. Sin instalación de dependencias ni compilación.
+
+Los recordatorios web requieren la página abierta y permisos de notificación. Para avisos con la página cerrada, descargar y guardar el evento ICS en un calendario; verificar los avisos allí. Quitar un recordatorio en la web no elimina el evento importado. El 29 de febrero se celebra el 28 en años no bisiestos. Los botones de saludo abren borradores: vos revisás y enviás.
