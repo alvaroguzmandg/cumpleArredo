@@ -220,10 +220,52 @@
     },
     {
       "id": "person-032",
-      "name": "Belen Grieco",
+      "name": "Belén Grieco",
       "email": "mgrieco@arredo.com.ar",
       "day": 28,
       "month": 2
+    },
+    {
+      "id": "person-033",
+      "name": "Julieta Ramos",
+      "email": "jramos@arredo.com.ar",
+      "day": 10,
+      "month": 11
+    },
+    {
+      "id": "person-034",
+      "name": "Silvia Rocha",
+      "email": "srocha@arredo.com.ar",
+      "day": 21,
+      "month": 7
+    },
+    {
+      "id": "person-035",
+      "name": "Victoria Ojeda",
+      "email": "vojeda@arredo.com.ar",
+      "day": 7,
+      "month": 4
+    },
+    {
+      "id": "person-036",
+      "name": "Fernanda Laspiur",
+      "email": "flaspiur@arredo.com.ar",
+      "day": 17,
+      "month": 1
+    },
+    {
+      "id": "person-037",
+      "name": "Silvia Caio",
+      "email": "scaio@arredo.com.ar",
+      "day": 1,
+      "month": 11
+    },
+    {
+      "id": "person-038",
+      "name": "Mabel Salas",
+      "email": "msalas@arredo.com.ar",
+      "day": 15,
+      "month": 12
     }
   ]
 }
