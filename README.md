@@ -4,7 +4,7 @@ Calendario responsive con cumpleaños de hoy, próximos, búsqueda y filtro por 
 
 ## Datos y actualizaciones
 
-La página muestra exclusivamente la lista publicada en `dist/birthdays.json`: identificador neutro, nombre completo, correo de Arredo, día y mes. Los correos se incluyen en los datos públicos de la web con autorización del usuario del 25/11/2026; el repositorio continúa privado. No incluye años de nacimiento. La lista actual reúne 18 personas, cruzando 15 respuestas del formulario con 5 altas manuales y unificando 2 coincidencias por correo (Pilar y Agustina Pantano). Es una actualización manual, no una sincronización con Google.
+La página muestra exclusivamente la lista publicada en `dist/birthdays.json`: identificador neutro, nombre completo, correo de Arredo, día y mes. Los correos se incluyen en los datos públicos de la web con autorización del usuario del 25/11/2026; el repositorio continúa privado. No incluye años de nacimiento. La lista reúne respuestas del formulario y altas manuales; las coincidencias se unifican por correo y nombre. Es una actualización manual, no una sincronización con Google.
 
 Las altas, correcciones y actualizaciones se solicitan en el chat. La página no ofrece formularios de carga, edición, importación ni exportación de cumpleaños. No utiliza registros locales creados con versiones anteriores; muestra la misma lista publicada para todo el equipo. Solo hay dos vistas: Cumpleaños y Calendario. La página no incluye recordatorios ni notificaciones.
 
