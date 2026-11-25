@@ -1,0 +1,229 @@
+{
+  "updatedAt": "2026-11-25",
+  "people": [
+    {
+      "id": "person-001",
+      "name": "Alvaro Guzmán",
+      "day": 13,
+      "month": 12,
+      "email": "aguzman@arredo.com.ar"
+    },
+    {
+      "id": "person-002",
+      "name": "Guada Velez",
+      "day": 1,
+      "month": 6,
+      "email": "gvelez@arredo.com.ar"
+    },
+    {
+      "id": "person-003",
+      "name": "Mariela Fernanda Trejo",
+      "day": 9,
+      "month": 9,
+      "email": "mtrejo@arredo.com.ar"
+    },
+    {
+      "id": "person-004",
+      "name": "Martina Salvia",
+      "day": 15,
+      "month": 2,
+      "email": "msalvia@arredo.com.ar"
+    },
+    {
+      "id": "person-005",
+      "name": "Ivana Zurita",
+      "day": 25,
+      "month": 6,
+      "email": "izurita@arredo.com.ar"
+    },
+    {
+      "id": "person-006",
+      "name": "Marcia Panizza",
+      "day": 17,
+      "month": 6,
+      "email": "mpanizza@arredo.com.ar"
+    },
+    {
+      "id": "person-007",
+      "name": "Melanie Gaudino",
+      "day": 15,
+      "month": 8,
+      "email": "mgaudino@arredo.com.ar"
+    },
+    {
+      "id": "person-008",
+      "name": "Flor Giovio",
+      "day": 11,
+      "month": 1,
+      "email": "fgiovio@arredo.com.ar"
+    },
+    {
+      "id": "person-009",
+      "name": "Deninson Leon",
+      "day": 15,
+      "month": 9,
+      "email": "dleon@arredo.com.ar"
+    },
+    {
+      "id": "person-010",
+      "name": "Andrés Denegri",
+      "email": "adenegri@arredo.com.ar",
+      "day": 13,
+      "month": 2
+    },
+    {
+      "id": "person-011",
+      "name": "Pilar Abelleira Castro",
+      "email": "pabelleira@arredo.com.ar",
+      "day": 23,
+      "month": 11
+    },
+    {
+      "id": "person-012",
+      "name": "Daiana German Rieber",
+      "email": "dgerman@arredo.com.ar",
+      "day": 16,
+      "month": 7
+    },
+    {
+      "id": "person-013",
+      "name": "Agustina Pantano",
+      "email": "apantano@arredo.com.ar",
+      "day": 29,
+      "month": 11
+    },
+    {
+      "id": "person-014",
+      "name": "Agustina Popp",
+      "email": "apopp@arredo.com.ar",
+      "day": 30,
+      "month": 1
+    },
+    {
+      "id": "person-015",
+      "name": "Xavier Vergara",
+      "email": "xvergara@arredo.com.ar",
+      "day": 12,
+      "month": 3
+    },
+    {
+      "id": "person-016",
+      "name": "Sebastian Moya",
+      "email": "smoya@arredo.com.ar",
+      "day": 22,
+      "month": 11
+    },
+    {
+      "id": "person-017",
+      "name": "Fabio Villalba",
+      "email": "fvillalba@arredo.com.ar",
+      "day": 15,
+      "month": 4
+    },
+    {
+      "id": "person-018",
+      "name": "Daniela Barrientos",
+      "email": "dbarrientos@arredo.com.ar",
+      "day": 23,
+      "month": 4
+    },
+    {
+      "id": "person-019",
+      "name": "Agustina Rios",
+      "email": "arios@arredo.com.ar",
+      "day": 18,
+      "month": 2
+    },
+    {
+      "id": "person-020",
+      "name": "Nati Rosales",
+      "email": "nrosales@arredo.com.ar",
+      "day": 23,
+      "month": 6
+    },
+    {
+      "id": "person-021",
+      "name": "Teresa Gomez",
+      "email": "tgomez@arredo.com.ar",
+      "day": 14,
+      "month": 10
+    },
+    {
+      "id": "person-022",
+      "name": "Maximiliano Romero",
+      "email": "mromero@arredo.com.ar",
+      "day": 17,
+      "month": 9
+    },
+    {
+      "id": "person-023",
+      "name": "Ludimila Zacarias",
+      "email": "lzacarias@arredo.com.ar",
+      "day": 19,
+      "month": 9
+    },
+    {
+      "id": "person-024",
+      "name": "Javier Zeballos",
+      "email": "jzeballos@arredo.com.ar",
+      "day": 26,
+      "month": 9
+    },
+    {
+      "id": "person-025",
+      "name": "Alejandra Vaca",
+      "email": "avaca@arredo.com.ar",
+      "day": 10,
+      "month": 10
+    },
+    {
+      "id": "person-026",
+      "name": "Stefania Menutti",
+      "email": "smenutti@arredo.com.ar",
+      "day": 7,
+      "month": 3
+    },
+    {
+      "id": "person-027",
+      "name": "Luca Aisa",
+      "email": "laisa@arredo.com.ar",
+      "day": 29,
+      "month": 1
+    },
+    {
+      "id": "person-028",
+      "name": "Margregory Sánchez",
+      "email": "msanchez@arredo.com.ar",
+      "day": 8,
+      "month": 2
+    },
+    {
+      "id": "person-029",
+      "name": "Javier Alonso",
+      "email": "jalonso@arredo.com.ar",
+      "day": 13,
+      "month": 4
+    },
+    {
+      "id": "person-030",
+      "name": "Pablo Alejandro Villalta Lasso",
+      "email": "alasso@arredo.com.ar",
+      "day": 23,
+      "month": 5
+    },
+    {
+      "id": "person-031",
+      "name": "Mariano José Lavallol",
+      "email": "mlavallol@arredo.com.ar",
+      "day": 5,
+      "month": 11
+    },
+    {
+      "id": "person-032",
+      "name": "Belen Grieco",
+      "email": "mgrieco@arredo.com.ar",
+      "day": 28,
+      "month": 2
+    }
+  ]
+}
