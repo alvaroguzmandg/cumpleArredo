@@ -4,3 +4,5 @@
 .person-row>.when{justify-self:start}.person-row .birthday-date{white-space:nowrap}@media(max-width:640px){.person-row>.when{justify-self:end}}
 
 #data-badge{cursor:default}
+/* Navegación simplificada: las únicas vistas son Cumpleaños y Calendario. */
+.sidebar nav{margin-top:42px}.page-heading{margin-top:4px}.shell main{padding-top:44px}@media(max-width:900px){.sidebar nav{margin-top:45px}}@media(max-width:640px){.sidebar nav{margin:0}.shell main{padding-top:28px}}
