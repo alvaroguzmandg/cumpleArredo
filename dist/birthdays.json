@@ -217,6 +217,13 @@
       "email": "mlavallol@arredo.com.ar",
       "day": 5,
       "month": 11
+    },
+    {
+      "id": "person-032",
+      "name": "Belen Grieco",
+      "email": "mgrieco@arredo.com.ar",
+      "day": 28,
+      "month": 2
     }
   ]
 }
