@@ -1,20 +1,16 @@
 # Confetti · Cumpleaños del equipo
 
-Calendario responsive con cumpleaños de hoy, próximos, búsqueda y filtro por mes. Sin Google Cloud, OAuth ni servicios pagos nuevos. Usa archivos estáticos, carga manual, importación CSV/JSON y recordatorios ICS.
+Calendario responsive con cumpleaños de hoy, próximos, búsqueda y filtro por mes. Sin Google Cloud, OAuth ni servicios pagos nuevos. Usa archivos estáticos, actualizaciones desde el chat y recordatorios ICS.
 
-## Datos compartidos y datos locales
+## Datos y actualizaciones
 
-`dist/birthdays.json` contiene la lista publicada del equipo: identificador neutro, nombre completo, día y mes. No incluye correos ni año de nacimiento. La carga inicial de 9 cumpleaños corresponde a la hoja facilitada, al 25/11/2026. Es una actualización manual, no una sincronización con Google.
+La página muestra exclusivamente la lista publicada en `dist/birthdays.json`: identificador neutro, nombre completo, día y mes. No incluye correos ni año de nacimiento. La carga inicial de 9 cumpleaños corresponde a la hoja facilitada, al 25/11/2026. Es una actualización manual, no una sincronización con Google.
 
-El formulario “Agregar cumpleaños” pide nombre, apellido, correo opcional, día y mes. Los cambios y correos se guardan únicamente en localStorage del navegador, nunca se envían a GitHub ni al alojamiento. Las ediciones locales se combinan con la lista publicada y nuevas altas del equipo. El icono de lápiz permite editar una persona o agregar su correo local para saludarla.
+Las altas, correcciones y actualizaciones se solicitan en el chat. La página no ofrece formularios de carga, edición, importación ni exportación de cumpleaños. No utiliza registros locales creados con versiones anteriores; muestra la misma lista publicada para todo el equipo. Los recordatorios y sus preferencias sí se guardan en cada navegador.
 
-Desde el botón de datos se pueden importar CSV/JSON y **Exportar para publicar**. La exportación incluye todos los nombres y cumpleaños visibles y excluye correos, años de nacimiento y cualquier campo adicional. Compartir ese JSON en el chat permite revisar y publicar una nueva lista para todo el equipo. Sin ese paso, las altas realizadas en el navegador no las ven otras personas ni otros dispositivos. No hay una base de datos compartida que escriba directamente desde la web.
+Para actualizar desde el chat se puede pedir leer nuevamente la hoja conectada de Google o entregar los nombres y cumpleaños. Antes de publicar, transformar cada registro a `id`, `name`, `day`, `month`; excluir emails, marca temporal y año de nacimiento. Verificar fechas y duplicados, ejecutar `npm test`, publicar el alojamiento y guardar el código en el repositorio privado. Las credenciales y respuestas originales nunca deben guardarse en Git.
 
-No se publican los correos aunque el repositorio sea privado. Si una persona no tiene correo local, el saludo permite copiar texto, abrir Teams para buscarla o abrir un correo sin destinatario.
-
-## Actualizar desde el chat
-
-Se puede pedir leer nuevamente la hoja conectada de Google o entregar el JSON exportado desde la web. Antes de publicar, transformar cada registro a `id`, `name`, `day`, `month`; excluir emails, marca temporal y año de nacimiento. Verificar fechas y duplicados, ejecutar `npm test`, publicar el alojamiento y guardar el código en el repositorio privado. Las credenciales y respuestas originales nunca deben guardarse en Git.
+Los saludos permiten copiar texto, abrir Teams para buscar a la persona o abrir un correo sin destinatario para completarlo manualmente.
 
 ## Publicación
 
